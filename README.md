@@ -94,7 +94,7 @@ This one is difficult, it is stating a concept rather than time, we also need he
 - Based on the errors, we should further check the modifers of the keyword. The modifier of relative is racoon, which is **what** type, conforming with the right answer. We leave it to the future work.
 - Some wh words may be part of words using our regular expression such as however, somewhat, but since the sentence we use is a question, and we could always find the first and more proper wh word representing the question sentence.
 - Here we decide to model **Unknown** type instead of **Affirmation** type, because we think it is easier and the auxilary words for **Affirmation** could be a lot. But logicaaly we ought to form tha latter first.
-- We delete some questions implicating a quesiont, like '*Name 10 of you favorite people.*. We think it is not a question because it will be deleted in the context in preprocessing step. But we could still model this type by investigating the object of the sentence.
+- We delete some impliacating questions in original corpus, like '*Name 10 of you favorite people.*' We think it is not a question because it will be deleted in preprocessing step if we hadle large corpus. But we could still model this type by investigating the object of the sentence.
 - If we could get large amount of data, machine learning methods are to be taken using SVM or neural network for multi-classification with the context being a vector, and more features should be explored.
 
 	
