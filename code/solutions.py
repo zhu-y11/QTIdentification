@@ -117,7 +117,7 @@ def Disamb( sent, parselist ):
             if keyword_synset:
                 time_synset = wn.synsets( keyword )[0].lowest_common_hypernyms(
                             wn.synset('time_period.n.01'))[0].name()
-                if 'time' in time_synset or 'measure' in time_synset:
+                if 'time_period.n.01' == time_synset or 'measure.n.02' == time_synset:
                     return '3'
 
                 #Concept of people

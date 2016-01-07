@@ -57,8 +57,8 @@ data is selected and labelled. There are 600 raw sentences in total in *data/raw
 16.					return who type
 17.         	if LeastCommonSynset(keyword.most_common_sense, synset(people.n.01)) = synset(people.n.01): 
 18.             	return who type
-19.         return what type
-20. 	return unkonwn type
+19.         	return what type
+20. 		return corresponding type according to method 3
 21. return affirmation type	            
 ````
 And we would get 97.17% accuracy for this method.
