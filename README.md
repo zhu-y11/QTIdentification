@@ -1,4 +1,4 @@
-#Question Type Identification(QTI)
+# Question Type Identification(QTI)
 
 This toolkit is used to identify question types, which consists of following types:
 
@@ -13,12 +13,12 @@ This toolkit is used to identify question types, which consists of following typ
 - **Unkown**: any other questions not falling in previous categories. 
 
 
-##Settings
+## Settings
 
 The stanford-parser is too big to upload. From [stanford-parser.zip](http://pan.baidu.com/s/1o7h0kRo) you could download zip file for a simpliefied stanford parser.
 And the folder *stanford-parser* should be at the same level as *code* and *data* to run successfully.
 
-##Data
+## Data
 The data is part of questions from the following link:
 
 - [Question Classification Training Set 1](http://cogcomp.cs.illinois.edu/Data/QA/QC/train_1000.label) (For who, what, when and unknown question)
@@ -27,7 +27,7 @@ The data is part of questions from the following link:
 data is selected and labelled. There are 600 raw sentences in total in *data/raw/raw_questions/label*.
 
 
-##Scripts
+## Scripts
 4 scripts included:
 
 - code/preprocessing.py: preprocess raw data data/raw/raw_questions_label, output /data/questions_lebel which is used for testing, and /data/stats for statistics of the types of sentences. Every time questions_label will be shuffled.
@@ -66,7 +66,7 @@ And we would get 97.17% accuracy for this method.
 - code/evaluation.py: evaluate different solutions, and print out wrong cases.
 - code/run.py: script to run preprocessing and evaluation in serial mode.
 
-##Selected Wrong Cases
+## Selected Wrong Cases
 g for gold result and p for predicted result.
 	
 - g:1 p:2 What famous model was married to Billy Joel
@@ -89,7 +89,7 @@ This is due to the most common sense we use, which is misleading and need help o
 
 This one is difficult, it is stating a concept rather than time, we also need help of context.
 
-##Further Improvement
+## Further Improvement
 
 - Based on the errors, we should further check the modifers of the keyword. The modifier of relative is racoon, which is **what** type, conforming with the right answer. We leave it to the future work.
 - Some wh words may be part of words using our regular expression such as however, somewhat, but since the sentence we use is a question, and we could always find the first and more proper wh word representing the question sentence.
